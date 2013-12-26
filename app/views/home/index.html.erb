@@ -2,6 +2,37 @@
 	<%= render 'home/header' %>
 </header>
 
-<section id="top">
+<section id="home">
 	<%= render 'home/slider' %>
 </section>
+
+<section id="features">
+	<%= render 'home/features' %>
+</section>
+
+<!-- Contact section -->
+<section id="contact">
+	<div class="row">
+		<div class="twelve columns">
+			<h3><i class="icon-envelope"></i>Want to preview FinApp? Request an invite!</h3>
+			<div class="six columns">
+			<p>FinApp is currently in beta, but we're allowing users in bulk to preview it. Signup your email to request an invite!</p>
+		</div>
+		<div class="six columns">
+			<!-- Contact form -->
+			<form id="contactForm" action="php/contact.php" method="post">
+				<div class="inner">
+					<i class="icon-envelope"></i>
+					<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />
+				</div>
+				
+				<input type="submit" id="sendMessage" name="sendMessage" value="Request invite" />
+			</form>
+			<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+			<div id="successMessage" class="successmessage"><p><span class="success-ico"><i class="icon-ok-circle"></i></span> Thanks for sending your message! We'll get back to you shortly.</p></div>
+			<div id="failureMessage" class="errormessage"><p><span class="error-ico"><i class="icon-remove-circle"></i></span> There was a problem sending your message. Please try again.</p></div>
+			<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+		</div>
+	</div>
+</section>
+<!-- Contact section -->
