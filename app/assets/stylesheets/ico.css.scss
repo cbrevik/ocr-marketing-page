@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'WebHostingHub-Glyphs';
-    src: font-url('/assets/webhostinghub-glyphs.eot');
-    src: font-url('/assets/webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
-         font-url('/assets/webhostinghub-glyphs.ttf') format('truetype');
+    src: asset_url('webhostinghub-glyphs.eot');
+    src: asset_url('webhostinghub-glyphs.eot?#iefix') format('embedded-opentype'),
+         asset_url('webhostinghub-glyphs.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     -moz-font-feature-settings: "calt=0,liga=0";
