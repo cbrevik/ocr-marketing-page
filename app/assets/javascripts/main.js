@@ -42,6 +42,9 @@ $(window).scroll( function() {
         $(".logo h1").css("margin", "10px 0 0 0");
 });
 
-
+if ($('.alert-box').length > 0)
+{
+    $('#signup').click();
+}
 });
 
